@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    <header>
+        <h1>Age Calculator</h1>
+    </header>
+    <div class="main">
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Month</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="date" id="date" min="1" max="31" placeholder="DD" required>
+                </td>
+                <td>
+                    <input type="number" name="month" id="month" min="1" max="12" placeholder="MM" required>
+                </td>
+                <td>
+                    <input type="number" name="year" id="year" min="1900" max="2024" placeholder="YYYY" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:center;">
+                    <button id="btn" onclick="calculate_age()">Calculate Age</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><p id="age"></p></td>
+            </tr>
+        </table>
+    </div>  
+    <footer>
+        <p>&copy; 2024 Kushal Narendracumar. All rights reserved.<br>Check out my projects on <a href="https://github.com/Kushal-Narendracumar7" target="_blank">GitHub</a>.</p>
+        <a href="https://github.com/Kushal-Narendracumar7" target="_blank"><i class="fab fa-github"></i></a>&nbsp;
+        <a href="https://www.linkedin.com/in/kushal-bamania-08633a24a" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </footer>
+    
+    <script src="script.js"></script>  
+</body>
+</html>
